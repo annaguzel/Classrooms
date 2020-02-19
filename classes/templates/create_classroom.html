@@ -1,10 +1,9 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
-
 {% block content %}
 	<form action="{% url 'classroom-create' %}" method="POST" enctype="multipart/form-data">
 		{% csrf_token %}
 		{{form|crispy}}
-		<input type="submit" value="Create" class="btn" style="background-color: #e3f2fd; color: black;">
+		<input type="submit" value="Create" class="btn" style="background-color: #E3F2FD; color: black;">
 	</form>
 {% endblock content %}
